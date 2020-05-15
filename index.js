@@ -4,14 +4,29 @@ const express = require("express");
 // create express server
 const app = express();
 
+function staticpage() {
+  const page = `<html>
+  <head>
+    <title>home</title>
+  </head>
+  
+  <body>
+    <h1>${myObject.joke1}</h1>
+    <br>
+    <p>${myObject.punch1}</p>
+  </body>
+  </html> `;
+  return page;
+}
+
 function createSomeJokes(age, gender) {
   let myObject = {
     joke1: `What is green and goes down the slopes very fast`,
     joke2: `What is green and goes down the slopes very fast`,
     joke3: `What is green and goes down the slopes very fast`,
-    joke4: `What is green and goes down the slopes very fast`,
-    joke5: `What is green and goes down the slopes very fast`,
-    joke6: `What is green and goes down the slopes very fast`,
+    punch1: `What is green and goes down the slopes very fast`,
+    punch2: `What is green and goes down the slopes very fast`,
+    punch3: `What is green and goes down the slopes very fast`,
   };
   const document = `<html>
   <head>
@@ -21,7 +36,7 @@ function createSomeJokes(age, gender) {
   <body>
     <h1>${myObject.joke1}</h1>
     <br>
-    <p> a ski wi!</p>
+    <p>${myObject.punch1}</p>
   </body>
   </html> `;
   return document;
@@ -33,6 +48,10 @@ app.get("/:age/:male", (request, response) => {
 
   const document = createSomeJokes(age, gender);
   response.send(document);
+});
+app.get("/", (request, response) => {
+  const page = staticpage();
+  response.send(page);
 });
 
 // handler function
