@@ -12,7 +12,6 @@ function createSomeJokes(age, gender) {
     joke4: `What is green and goes down the slopes very fast`,
     joke5: `What is green and goes down the slopes very fast`,
     joke6: `What is green and goes down the slopes very fast`,
-    punch1: `A ski-wi!`,
   };
   const document = `<html>
   <head>
@@ -22,13 +21,13 @@ function createSomeJokes(age, gender) {
   <body>
     <h1>${myObject.joke1}</h1>
     <br>
-    <p> ${punch1}</p>
+    <p> a ski wi!</p>
   </body>
   </html> `;
   return document;
 }
 
-app.get("/:age/:gender", (request, response) => {
+app.get("/:age/:male", (request, response) => {
   const age = request.params.age;
   const gender = request.params.gender;
 
