@@ -4,8 +4,6 @@ const express = require("express");
 // create express server
 const app = express();
 
-//creating hmtl page
-
 function createSomeJokes(age, gender) {
   let myObject = {
     joke1: `What is green and goes down the slopes very fast`,
@@ -39,21 +37,21 @@ app.get("/:age/:gender", (request, response) => {
 });
 
 // handler function
-function render(message) {
-  const document = `
-    <html>
-    <head>
-      <title>home</title>
-    </head>
-    
-    <body>
-      <h1>Welcome ${message} ?!!</h1>
-      <br>
-      we're so happy to see you here!
-    </body>
-    </html>`;
-  return document;
-}
+// function render(message) {
+//   const document = `
+//     <html>
+//     <head>
+//       <title>home</title>
+//     </head>
+
+//     <body>
+//       <h1>Welcome ${message} ?!!</h1>
+//       <br>
+//       we're so happy to see you here!
+//     </body>
+//     </html>`;
+//   return document;
+// }
 
 // app.get("/user/:name", (request, response) => {
 //   const message = request.params.name;
