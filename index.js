@@ -5,7 +5,12 @@ const express = require("express");
 const app = express();
 
 function staticpage() {
-  const page = `<html>
+  const page = `<style type="text/css">
+  p {
+    color: #26b72b;
+  }
+  </style>
+  <html>
   <head>
     <title>home</title>
   </head>
@@ -28,7 +33,16 @@ function createSomeJokes(age, gender) {
     punch2: `What is green and goes down the slopes very fast`,
     punch3: `What is green and goes down the slopes very fast`,
   };
-  const document = `<html>
+  const document = `<style type="text/css">
+  p {
+    color: #26b72b;
+  }
+
+  h1 {
+    color: green;
+  }
+  </style>
+  <html>
   <head>
     <title>home</title>
   </head>
