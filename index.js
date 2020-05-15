@@ -79,8 +79,7 @@ function render(message) {
 //   }
 // );
 
-// 3000 is common
-const port = 4000;
+const port = process.env.PORT || 3000;
 
 // start listening
 app.listen(port, () => console.log(`Listening on :${port}`));
