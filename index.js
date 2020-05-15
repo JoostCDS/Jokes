@@ -5,17 +5,14 @@ const express = require("express");
 const app = express();
 
 function staticpage() {
-  const page = `<style type="text/css">
-  p {
-    color: #26b72b;
-  }
-  </style>
+  const page = `
   <html>
   <head>
     <title>home</title>
   </head>
   
   <body>
+  <link rel="stylesheet" href="style.css">
     <h1>Home</h1>
     <br>
     <p>This is the home page, tell me more tell more more!</p>
