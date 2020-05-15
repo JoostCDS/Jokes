@@ -11,9 +11,9 @@ function staticpage() {
   </head>
   
   <body>
-    <h1>${myObject.joke1}</h1>
+    <h1>Home</h1>
     <br>
-    <p>${myObject.punch1}</p>
+    <p>This is the home page, tell me more tell more more!</p>
   </body>
   </html> `;
   return page;
