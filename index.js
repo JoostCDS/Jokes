@@ -7,17 +7,34 @@ const app = express();
 function staticpage() {
   const page = `
   <html>
+  <link rel="stylesheet" href="style.css">
   <head>
     <title>home</title>
   </head>
-  
-  <body>
-  <link rel="stylesheet" href="style.css">
-    <h1>Home</h1>
-    <br>
-    <p>This is the home page, tell me more tell more more!</p>
-  </body>
-  </html> `;
+  <div class="articles">
+		<div class="article">
+			<h1>About Me </h1>
+			<p>My Name is Joost, I'm a 27 year old living in Amsterdam.</p>
+			<div class="duck-container">
+				<img src="images/duck1.jpg">
+			</div>
+		</div>
+
+		<div class="article">
+			<h1>Educational Background</h1>
+			<p>I have done my Bachelor's and Master's Degree at the Vrije Universiteit Amsterdam in International Business Administration and Digital Business & Innovation.</p>
+			<div class="duck-container">
+			<img src="images/duck2.jpg">
+			</div>
+		</div>
+
+		<div class="article">
+			<h1> Hobbies </h1>
+			<p>My hobbies include: Cycling, Rafting, Snowboarding, Multiple-day-treks and anything else outdoorsy basically.</p>
+			<div class="duck-container">
+				<img src="images/duck3.jpg">
+			</div>
+`;
   return page;
 }
 
@@ -111,3 +128,11 @@ const port = process.env.PORT || 3000;
 
 // start listening
 app.listen(port, () => console.log(`Listening on :${port}`));
+
+// <body>
+// <link rel="stylesheet" href="style.css">
+//   <h1>Home</h1>
+//   <br>
+//   <p>This is the home page, tell me more tell more more!</p>
+// </body>
+// </html>
