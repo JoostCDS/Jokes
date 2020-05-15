@@ -14,6 +14,7 @@ function createSomeJokes(age, gender) {
     joke4: `What is green and goes down the slopes very fast`,
     joke5: `What is green and goes down the slopes very fast`,
     joke6: `What is green and goes down the slopes very fast`,
+    punch1: `A ski-wi!`,
   };
   const document = `<html>
   <head>
@@ -21,9 +22,9 @@ function createSomeJokes(age, gender) {
   </head>
   
   <body>
-    <h1>Welcome Joke lover !!</h1>
+    <h1>${myObject.joke1}</h1>
     <br>
-    ${myObject.joke1}
+    <p> ${punch1}</p>
   </body>
   </html> `;
   return document;
