@@ -51,6 +51,7 @@ function createSomeJokes(age, gender) {
     <h1>${myObject.joke1}</h1>
     <br>
     <p>${myObject.punch1}</p>
+    <a href="./gender/age">The Best Joke ever</a>
   </body>
   </html> `;
   return document;
