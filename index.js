@@ -24,11 +24,7 @@ function staticpage() {
 function createSomeJokes(age, gender) {
   let myObject = {
     joke1: `What is green and goes down the slopes very fast`,
-    joke2: `What is green and goes down the slopes very fast`,
-    joke3: `What is green and goes down the slopes very fast`,
-    punch1: `What is green and goes down the slopes very fast`,
-    punch2: `What is green and goes down the slopes very fast`,
-    punch3: `What is green and goes down the slopes very fast`,
+    punch1: `A ski-wi!`,
   };
   const document = `<style type="text/css">
   p {
